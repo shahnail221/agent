@@ -9,10 +9,10 @@ Due to the strict schema of the public Google ADK build used, the agent only acc
 
 All game logic is implemented through explicit ADK FunctionTools:
 
-validate_move checks move validity and bomb usage
-resolve_round applies game rules and updates state
-game_over enforces the 3-round limit
-final_result determines the overall winner
+1. validate_move checks move validity and bomb usage
+2. resolve_round applies game rules and updates state
+3. game_over enforces the 3-round limit
+4. final_result determines the overall winner
 This cleanly separates intent handling, game logic, and state mutation, with tools owning all rule enforcement.
 
 **Tradeoffs**
